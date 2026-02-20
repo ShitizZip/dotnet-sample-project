@@ -2,18 +2,24 @@
 
 ## Task: Order Management API
 Your goal is to build a minimal Order Management API using C# and ASP.NET Core. For the sake of this interview, please skip setting up a real database; an in-memory data store (like a List, Dictionary, or ConcurrentDictionary) is perfect.
+
 The Domain Model Your primary object is an Order. At a minimum, it should contain the following properties, but feel free to add anything else you think is necessary to make the endpoints work:
-C#
+
+
+```csharp
 {
     "Item": string,
     "Qty": int,
     "Price": decimal
 }
+```
+
 Required Endpoints Please implement the following RESTful endpoints:
-POST /order – Creates a new order.
-GET /order/{id} – Retrieves a specific order by its unique identifier.
-Bonus / Nice-to-Have (If time permits) 3. GET /orders – Retrieves a list of all current orders.
-Bonus / Nice-to-Have (If time permits) 4. Update orders
+
+- POST /order – Creates a new order.
+- GET /order/{id} – Retrieves a specific order by its unique identifier.
+- Bonus / Nice-to-Have (If time permits) 3. GET /orders – Retrieves a list of all current orders.
+- Bonus / Nice-to-Have (If time permits) 4. Update orders
 
 ## Getting Started
 
